@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="krishna"] {
+  --gj-bg: #f3f6fa;
+  --gj-surface: #ffffff;
+  --gj-surface-subtle: #e9eff7;
+  --gj-border: #cedbe9;
+  --gj-text: #122136;
+  --gj-text-muted: #495d75;
+  --gj-accent: #1b436b;
+  --gj-accent-hover: #143250;
+  --gj-accent-soft: #e0eaf5;
+  --gj-accent-text: #ffffff;
+  --gj-gold: #8d6b1e;
+  --gj-gold-soft: #f5eedb;
+  --gj-success: #166534;
+  --gj-success-bg: #edf7f0;
+  --gj-warning: #92400e;
+  --gj-warning-bg: #fef7eb;
+  --gj-danger: #991b1b;
+  --gj-danger-bg: #fef2f2;
+}
+
+[data-theme="radha_shyamasundara"] {
+  --gj-bg: #f9f6f0;
+  --gj-surface: #ffffff;
+  --gj-surface-subtle: #f1ebe0;
+  --gj-border: #ded2be;
+  --gj-text: #17233d;
+  --gj-text-muted: #52596b;
+  --gj-accent: #1f3a82;
+  --gj-accent-hover: #172c64;
+  --gj-accent-soft: #e5ebfa;
+  --gj-accent-text: #ffffff;
+  --gj-gold: #9b6c16;
+  --gj-gold-soft: #f7eedb;
+  --gj-success: #166534;
+  --gj-success-bg: #edf7f0;
+  --gj-warning: #92400e;
+  --gj-warning-bg: #fef7eb;
+  --gj-danger: #991b1b;
+  --gj-danger-bg: #fef2f2;
+}
+
+[data-theme="gauranga"] {
+  --gj-bg: #fcf9f2;
+  --gj-surface: #ffffff;
+  --gj-surface-subtle: #f6ede0;
+  --gj-border: #e6d5b8;
+  --gj-text: #2a1e10;
+  --gj-text-muted: #66523d;
+  --gj-accent: #a64b0a;
+  --gj-accent-hover: #863b06;
+  --gj-accent-soft: #fbead5;
+  --gj-accent-text: #ffffff;
+  --gj-gold: #9a5b08;
+  --gj-gold-soft: #faefd9;
+  --gj-success: #166534;
+  --gj-success-bg: #edf7f0;
+  --gj-warning: #92400e;
+  --gj-warning-bg: #fef7eb;
+  --gj-danger: #991b1b;
+  --gj-danger-bg: #fef2f2;
+}
+
+body {
+  background-color: var(--gj-bg);
+  color: var(--gj-text);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sanskrit {
+  font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', serif;
+  line-height: 1.9;
+}
+
+.font-mono-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.headline-balance {
+  text-wrap: balance;
+}
+
+@keyframes gj-settle-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gj-enter {
+  animation: gj-settle-in 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

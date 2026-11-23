@@ -1,0 +1,8 @@
+{
+  "name": "GĪTĀ JOURNEY",
+  "description": "The Path of 700 Verses — a serene, devotional Bhagavad-gītā reading and learning companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
